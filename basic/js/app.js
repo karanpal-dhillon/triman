@@ -6,19 +6,28 @@ saveButton.addEventListener("click", notify)
 // function onHover() {
 //     h2Id.classList.add("underline")
 // }
-h2Id.addEventListener("mouseover", toggleClass)
+h2Id.addEventListener("mouseover", toggleClassOnElement)
+h2Id.addEventListener("mouseout", toggleClassOnElement)
+para1.addEventListener("mouseover", toggleClassOnElement)
+para1.addEventListener("mouseout", toggleClassOnElement)
 
+// h2Id.addEventListener('mouseover', () => toggleClassOnElement(h2Id))
 // function onMouseOut() {
 //     h2Id.classList.remove("underline")
 // }
-h2Id.addEventListener("mouseout", toggleClass)
 
 function toggleClass() {
     h2Id.classList.toggle("underline")
 }
 
-function toggleClass1(){
+function toggleClass1() {
     para1.classList.toggle("background")
 }
-para1.addEventListener("mouseover",toggleClass1)
-para1.addEventListener("mouseout", toggleClass1)
+
+function toggleClassOnElement(event) {
+    const element = event.target;
+    element.classList.toggle('underline')
+}
+
+
+
