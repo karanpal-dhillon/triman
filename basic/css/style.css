@@ -37,7 +37,7 @@ button {
     margin-top: 1rem;
 }
 
-p {
+#para {
     background-color: purple;
     color: white;
     padding: 1rem;
@@ -50,4 +50,10 @@ p {
 
 .underline {
     text-decoration: underline;
+}
+#para1{
+    margin-top: 1rem;
+}
+.background {
+    background-color: pink;
 }
