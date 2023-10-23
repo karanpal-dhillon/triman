@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1rem 0;
+    text-decoration: underline;
+}
+
+h2,
+h3 {
+    margin: 1rem 0;
+}
+
+button {
+    background-color: aqua;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: magenta;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+p {
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+/* h2:hover {
+    text-decoration: underline;
+} */
+
+.underline {
+    text-decoration: underline;
+}
